@@ -15,3 +15,7 @@
 ![demo](assets/esp32-simple-pushbutton-led.gif)
 - [esp32-toggle-pushbutton-led](https://github.com/melvincabatuan/Projects/tree/main/esp32-toggle-pushbutton-led) (Toggle Pushbutton Circuit with INPUT_PULLUP)
 ![demo](assets/esp32-toggle-pushbutton-led.gif)
+
+## PWM Output esp32-pwm-output-led
+- [esp32-pwm-led](https://github.com/melvincabatuan/Projects/tree/main/esp32-pwm-led) (ESP32 PWM)
+![demo](assets/esp32-pwm-led.gif)
