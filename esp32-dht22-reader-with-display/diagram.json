@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "author": "Melvin Cabatuan",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -4.9, "left": -5, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -134.1,
+      "left": 138.6,
+      "attrs": { "temperature": "25", "humidity": "76.5" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 6.4,
+      "left": 322.4,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rpu_sda",
+      "top": 109,
+      "left": 267.95,
+      "rotate": 270,
+      "attrs": { "value": "4700" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rpu_scl",
+      "top": 109,
+      "left": 239.15,
+      "rotate": 270,
+      "attrs": { "value": "4700" }
+    }
+  ],
+  "connections": [
+    [ "esp:3V3", "dht1:VCC", "red", [ "h0" ] ],
+    [ "esp:D4", "dht1:SDA", "green", [ "h0" ] ],
+    [ "esp:GND.1", "dht1:GND", "black", [ "h0" ] ],
+    [ "esp:GND.1", "lcd1:GND", "black", [ "h134.1", "v-105.7" ] ],
+    [ "esp:VIN", "lcd1:VCC", "red", [ "h-19.2", "v48", "h268.8", "v-153.7" ] ],
+    [ "esp:D21", "lcd1:SDA", "blue", [ "h57.3", "v-0.4", "h172.8" ] ],
+    [ "esp:D22", "lcd1:SCL", "purple", [ "v-0.3", "h172.5", "v38.1" ] ],
+    [ "rpu_sda:1", "esp:3V3", "red", [ "v9.6", "h-201.3" ] ],
+    [ "rpu_sda:2", "esp:D21", "blue", [ "v-27.6", "h-57.6", "v0.4" ] ],
+    [ "rpu_scl:1", "esp:3V3", "red", [ "v8.2", "h-182.4" ] ],
+    [ "rpu_scl:2", "esp:D22", "purple", [ "v-57.8", "h-172.5" ] ]
+  ],
+  "dependencies": {}
+}
