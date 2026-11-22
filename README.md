@@ -9,5 +9,7 @@
 ![demo3](assets/esp32-running-lights-active-low.gif)
 
 ## GPIO as Input
+- [esp32-simple-pushbutton-internal-led](https://github.com/melvincabatuan/Projects/tree/main/esp32-simple-pushbutton-internal-led) (Simple Pushbutton Circuit with INPUT_PULLUP)
+![demo1](assets/esp32-simple-pushbutton-internal-led.gif)
 - [esp32-simple-pushbutton-led](https://github.com/melvincabatuan/Projects/tree/main/esp32-simple-pushbutton-led) (Simple Pushbutton Circuit with INPUT_PULLUP)
 ![demo1](assets/esp32-simple-pushbutton-led.gif)
