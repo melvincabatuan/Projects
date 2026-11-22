@@ -19,6 +19,8 @@
 ## Analog Input
 - [esp32-potentiometer-input](https://github.com/melvincabatuan/Projects/tree/main/esp32-potentiometer-input) (ESP32 PWM)
 ![demo](assets/esp32-potentiometer-input.gif)
+- [esp32-potentiometer-ledt](https://github.com/melvincabatuan/Projects/tree/main/esp32-potentiometer-led) (ESP32 PWM controls LED Blinking)
+![demo](assets/esp32-potentiometer-led.gif)
 
 ## PWM Output esp32-pwm-output-led
 - [esp32-pwm-led](https://github.com/melvincabatuan/Projects/tree/main/esp32-pwm-led) (ESP32 PWM)

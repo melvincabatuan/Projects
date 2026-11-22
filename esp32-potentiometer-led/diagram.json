@@ -3,18 +3,24 @@
   "author": "Melvin Cabatuan",
   "editor": "wokwi",
   "parts": [
-    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
-    { "type": "wokwi-potentiometer", "id": "pot1", "top": -90, "left": 200, "attrs": {} },
-    { "type": "wokwi-resistor", "id": "r1", "top": 60, "left": 180, "attrs": { "value": "220" } },
-    { "type": "wokwi-led", "id": "led1", "top": 50, "left": 260, "attrs": { "color": "red" } }
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 14.3, "left": -5, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -97.3, "left": 201.4, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 32.75,
+      "left": 115.2,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 73.2, "left": 138.2, "attrs": { "color": "red" } }
   ],
   "connections": [
     [ "esp:3V3", "pot1:VCC", "red", [ "h0" ] ],
-    [ "esp:D32", "pot1:SIG", "green", [ "h0" ] ],
+    [ "esp:D32", "pot1:SIG", "green", [ "h-53", "v-86.5", "h292" ] ],
     [ "esp:GND.1", "pot1:GND", "black", [ "h0" ] ],
     [ "esp:D23", "r1:1", "green", [ "h0" ] ],
-    [ "r1:2", "led1:A", "green", [ "h0" ] ],
-    [ "led1:C", "esp:GND.1", "black", [ "h0" ] ]
+    [ "r1:2", "led1:A", "green", [ "h18", "v28.8", "v48" ] ],
+    [ "led1:C", "esp:GND.1", "black", [ "v48", "h-66.5" ] ]
   ],
   "dependencies": {}
 }
